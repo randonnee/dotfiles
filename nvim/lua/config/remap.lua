@@ -1,5 +1,3 @@
--- open the explorer
-vim.keymap.set("n", "<leader>ef", vim.cmd.Ex)
 
 -- go back to normal mode
 vim.keymap.set("i", "fj", "<Esc>")
@@ -38,7 +36,3 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover)
 vim.keymap.set("n", "bp", ":bp<CR>")
 vim.keymap.set("n", "bn", ":bn<CR>")
 vim.keymap.set("n", "bd", ":bd<CR>")
-
--- insert line below or above
-vim.keymap.set("n", "<c-o>", "o<esc>")
-vim.keymap.set("n", "<c-i>", "O<esc>")
