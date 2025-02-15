@@ -4,6 +4,8 @@ return {
 	opts = {
 		picker = {},
 	},
+	lazy = false,
+	priority = 1000,
 	keys = {
 		{
 			"<leader><space>",
@@ -18,6 +20,13 @@ return {
 				Snacks.picker.grep()
 			end,
 			desc = "Grep",
+		},
+		{
+			"<leader>ff",
+			function()
+				Snacks.picker.files()
+			end,
+			desc = "Find Files",
 		},
 		{
 			"<leader>:",
@@ -54,6 +63,13 @@ return {
 				Snacks.picker.lsp_symbols()
 			end,
 			desc = "LSP Symbols",
+		},
+		{
+			"<leader>fc",
+			function()
+				Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
+			end,
+			desc = "Find Config File",
 		},
 	},
 }
