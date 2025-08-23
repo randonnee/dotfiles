@@ -104,6 +104,12 @@ return { -- Autocompletion
 					return require("nvim-highlight-colors").format(entry, item)
 				end,
 			},
+			enabled = function()
+				if require("cmp.config.context").in_treesitter_capture("string") then
+					return false
+				end
+				return true -- Enable cmp otherwise
+			end,
 		})
 	end,
 }
