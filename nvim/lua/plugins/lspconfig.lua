@@ -140,6 +140,7 @@ return {
 			--
 			cssls = {},
 			html = {},
+			ocamllsp = {},
 
 			lua_ls = {
 				-- cmd = {...},
@@ -191,5 +192,8 @@ return {
 				end,
 			},
 		})
+
+		local lspconfig = require("lspconfig")
+		lspconfig.sourcekit.setup({})
 	end,
 }
