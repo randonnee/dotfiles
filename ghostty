@@ -1,0 +1,4 @@
+theme = Monokai Pro
+font-feature = -calt
+window-padding-balance = true
+window-padding-color = extend
