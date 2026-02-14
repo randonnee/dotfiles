@@ -3,5 +3,9 @@ return {
 	main = "ibl",
 	---@module "ibl"
 	---@type ibl.config
-	opts = {},
+	opts = {
+		debounce = 100,
+		indent = { char = "." },
+		whitespace = { highlight = { "Whitespace", "NonText" } },
+	},
 }
